@@ -1,6 +1,7 @@
 # 个人课程项目简介
 - 手撸了一个小型的多级反馈队列（3级）`mlq.c` 来保证进程的公平性以及cpu的使用效率，模拟随机到来的进程饿cpu时间分配调度。第一级用了固定时间间隙的FCFS队列，第二级用了RR队列，第三级用了可以被更高优先级任务打断的FCFS队列。详情请参考`stage1report.pdf`. 
 - 另外，写了一个简易的伙伴内存分配器 `mab.c` 来进行相应的进程内存管理。见`stage2report.pdf`.
+- 模拟随性文件见`tests/test_file_*` 每一行的数据代表：进程产生的时间点、所需cpu处理时间、所需内存。
 
 # How to compile the main program
 1. `make clean` to remove possibly existing `mlq` `test` exec
