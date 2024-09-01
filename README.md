@@ -1,3 +1,6 @@
+# 个人课程项目
+手撸了一个小型的多级反馈队列（3级）来保证进程的公平性以及cpu的使用效率，模拟随机到来的进程饿cpu时间分配调度。第一级用了固定时间间隙的FCFS队列，第二级用了RR队列，第三级用了可以被更高优先级任务打断的FCFS队列。另外，写了一个简易的伙伴内存分配器来进行相应的进程内存管理。
+
 # How to compile the main program
 1. `make clean` to remove possibly existing `mlq` `test` exec
 2. `make` in CLI to create an `mlq` executable
